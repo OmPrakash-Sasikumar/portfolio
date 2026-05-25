@@ -25,6 +25,8 @@
 
 <body>
 
+    <div id="particles-js"></div>
+
     <!-- BACKGROUND BLUR -->
 
     <div class="blur1"></div>
@@ -48,9 +50,13 @@
 
         </ul>
 
-        <button class="nav-btn">
-            Download CV
-        </button>
+     <a href="resume.pdf" download>
+
+    <button class="nav-btn">
+        Download CV
+    </button>
+
+</a>  
 
     </nav>
 
@@ -68,7 +74,7 @@
             </h1>
 
             <h2>
-                Full Stack Developer
+                <span id="typing"></span>
             </h2>
 
             <p class="hero-text">
@@ -81,13 +87,29 @@
 
             <div class="hero-buttons">
 
-                <button>
-                    View My Work
-                </button>
+              <a href="#projects">
 
-                <button class="btn2">
-                    Contact Me
-                </button>
+    <button>
+        View My Work
+    </button>
+
+</a>
+
+                <a href="https://github.com/omprakash-sasikumar" target="_blank">
+
+    <button class="hero-btn secondary-btn">
+        GitHub
+    </button>
+
+</a>
+
+<a href="#contact">
+
+    <button class="btn2">
+        Contact Me
+    </button>
+
+</a>
 
             </div>
 
@@ -97,9 +119,13 @@
                     <i class="fab fa-github"></i>
                 </a>
 
-                <a href="#">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+                <a
+href="https://www.linkedin.com/in/omprakash1603"
+target="_blank">
+
+    <i class="fab fa-linkedin"></i>
+
+</a>
 
                 <a href="#">
                     <i class="fab fa-instagram"></i>
@@ -117,8 +143,9 @@
 
             <div class="image-circle">
 
-                <img
-                src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+            <img
+src="profile.jpeg"
+class="profile-img">
         
             </div>
 
@@ -190,7 +217,7 @@
 
     <!-- ABOUT -->
 
-    <section class="about" id="about">
+    <section class="about hidden" id="about">
 
         <div class="about-image">
 
@@ -239,7 +266,7 @@
 
     <!-- PROJECTS -->
 
-    <section class="projects" id="projects">
+    <section class="projects hidden" id="projects">
 
         <h2 class="section-title">
             My Projects
@@ -269,9 +296,15 @@
                             Live Demo
                         </button>
 
-                        <button class="btn2">
-                            GitHub
-                        </button>
+                     <a
+href="https://github.com/omprakash-sasikumar"
+target="_blank">
+
+<button class="btn2">
+    GitHub
+</button>
+
+</a>   
 
                     </div>
 
@@ -350,7 +383,7 @@
     <!-- SKILLS -->
 <!-- SKILLS -->
 
-<section class="skills" id="skills">
+<section class="skills hidden" id="skills">
 
     <h2 class="section-title">
         Tech Stack
@@ -430,7 +463,7 @@
 
 <!-- ACHIEVEMENTS -->
 
-<section class="achievements">
+<section class="achievements hidden">
 
     <h2 class="section-title">
         Achievements
@@ -500,7 +533,7 @@
 
     <!-- CONTACT -->
 
-    <section class="contact" id="contact">
+    <section class="contact hidden" id="contact">
 
         <h2 class="section-title">
             Let's Connect
@@ -538,6 +571,8 @@
     </footer>
 
     <script src="app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 </body>
 

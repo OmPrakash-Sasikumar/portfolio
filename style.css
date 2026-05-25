@@ -1,3 +1,21 @@
+#particles-js{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    top:0;
+
+    left:0;
+
+    z-index:-1;
+
+    background:#050816;
+
+}
+
 *{
     margin:0;
     padding:0;
@@ -11,6 +29,7 @@ body{
     background:#050816;
     color:white;
     overflow-x:hidden;
+    position: relative;
 
 }
 
@@ -900,5 +919,34 @@ nav ul li a::after{
 nav ul li a:hover::after{
 
     width:100%;
+
+}
+
+.profile-img{
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    border: 5px solid #7d5fff;
+    box-shadow: 0 0 40px #7d5fff;
+    margin-top: 5px;
+}
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:all 1s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
 
 }

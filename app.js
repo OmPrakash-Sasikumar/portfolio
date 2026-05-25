@@ -68,3 +68,101 @@ function eraseEffect(){
 }
 
 typeEffect();
+
+window.onload = function(){
+
+    particlesJS("particles-js", {
+
+        particles: {
+
+            number: {
+                value: 80,
+                density: {
+                    enable: true,
+                    value_area: 800
+                }
+            },
+
+            color: {
+                value: "#8b5cf6"
+            },
+
+            shape: {
+                type: "circle"
+            },
+
+            opacity: {
+                value: 0.5
+            },
+
+            size: {
+                value: 3
+            },
+
+            line_linked: {
+
+                enable: true,
+
+                distance: 150,
+
+                color: "#8b5cf6",
+
+                opacity: 0.4,
+
+                width: 1
+
+            },
+
+            move: {
+
+                enable: true,
+
+                speed: 2
+
+            }
+
+        },
+
+        interactivity: {
+
+            events: {
+
+                onhover: {
+                    enable: true,
+                    mode: "grab"
+                }
+
+            }
+
+        },
+
+        retina_detect: true
+
+    });
+
+}
+
+const hiddenElements =
+document.querySelectorAll(
+".projects, .skills, .about, .contact, .achievements"
+);
+
+window.addEventListener("scroll", () => {
+
+    hiddenElements.forEach(el => {
+
+        const position =
+        el.getBoundingClientRect().top;
+
+        const screenPosition =
+        window.innerHeight / 1.2;
+
+        if(position < screenPosition){
+
+            el.classList.add("show");
+
+        }
+
+    });
+
+});
