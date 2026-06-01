@@ -488,29 +488,34 @@ button:hover{
 
 }
 
+
 .projects-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
 
-    display:grid;
+@media (max-width: 900px){
+    .projects-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
-    grid-template-columns:
-    repeat(auto-fit,minmax(320px,1fr));
-
-    gap:30px;
-
+@media (max-width: 600px){
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
 }
 
 .project-card{
-
-    background:#111827;
-
-    border-radius:20px;
-
-    overflow:hidden;
-
-    transition:0.3s;
-
-    border:1px solid rgba(255,255,255,0.08);
-
+    background: #0b1225;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #6d4aff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .project-card:hover{
@@ -534,6 +539,10 @@ button:hover{
 .project-content{
 
     padding:25px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
